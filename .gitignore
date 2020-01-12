@@ -1,0 +1,2 @@
+#JOSH: Ignore all node_modules folder in sub-directories to root: https://stackoverflow.com/a/2545710
+**/node_modules

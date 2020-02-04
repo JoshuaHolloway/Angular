@@ -16,11 +16,12 @@
     * 05: Working with the component styles
     * 06: Understanding the component selector
     * 07: Data Binding
-
-    ******************************************
     * 07_a: Data Binding: String Interpolation
     * 07_b: Data Binding: Property Binding
-    * 07_c: Data Binding: Event Binding
+    * 07_c: Data Binding: Property Binding vs. String Interpolation
+
+    ******************************************
+    * 07_d: Data Binding: Event Binding
     ******************************************
 
 ### Markdown Cheat-Sheet:

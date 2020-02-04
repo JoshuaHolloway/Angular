@@ -6,18 +6,22 @@
         * Editing the first app
 
 * 2 - Section 2: The basics
-    * 00
-        * Components are important!
+    * 00: Components are important!
+    * 01
         * Creating a new component
         * Understanding the role of AppModule and Component declarations
-    * 01
-        * Using custom components
-    * 02
-        * Creating components with the CLI and nesting
-    * 03
-        * Working with component templates
-    * 04
-        * Working with the component styles
+    * 02: Using custom components
+    * 03: Creating components with the CLI and nesting
+    * 04: Working with component templates
+    * 05: Working with the component styles
+    * 06: Understanding the component selector
+    * 07: Data Binding
+
+    ******************************************
+    * 07_a: Data Binding: String Interpolation
+    * 07_b: Data Binding: Property Binding
+    * 07_c: Data Binding: Event Binding
+    ******************************************
 
 ### Markdown Cheat-Sheet:
 

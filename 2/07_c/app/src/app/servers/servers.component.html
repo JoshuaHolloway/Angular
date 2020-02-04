@@ -1,0 +1,23 @@
+<hr>
+
+<p>server<b>s</b>.component.html</p>
+
+<button class="btn btn-primary" disabled>Josh</button>
+
+<!-- Square brackets indicate to Angular that we are using Property Binding -->
+<!-- Bind to this property dynamically -->
+<button class="btn btn-primary" [disabled]="!allowNewServer">Josh</button>
+
+<!-- Compare Property Binding to String Interpolation -->
+<p> String Interpolation:
+    <span>{{allowNewServer}}</span>
+</p>
+<p>
+    Property Binding:
+    <span [innerText]="allowNewServer"></span>
+</p>
+
+<hr>
+
+<app-server></app-server>
+<!-- <app-server></app-server> -->

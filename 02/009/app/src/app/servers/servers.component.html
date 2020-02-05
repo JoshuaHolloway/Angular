@@ -1,0 +1,45 @@
+<hr>
+
+<p>server<b>s</b>.component.html</p>
+
+<button class="btn btn-primary" disabled>Josh</button>
+
+<!-- Square brackets indicate to Angular that we are using Property Binding -->
+<!-- Bind to this property dynamically -->
+<button class="btn btn-primary" [disabled]="!allowNewServer">Josh</button>
+
+<!-- Compare Property Binding to String Interpolation -->
+<p> String Interpolation:
+    <span>{{allowNewServer}}</span>
+</p>
+<p>
+    Property Binding:
+    <span [innerText]="allowNewServer"></span>
+</p>
+
+<!-- [07_d] -->
+<p style="color: red; font-weight: bold;">{{serverCreationStatus}}</p>
+
+<!-- [08] -->
+<label for="">Server Name</label>
+<input type="text" class="form-control" (input)="onUpdateServerName($event)">
+<p>{{serverName}}</p>
+<!-- [08]: $event is a keyword that gives us access to the event data -->
+
+
+<!-- [09] -->
+<label for="">Server Name</label>
+<input type="text" class="form-control" [(ngModel)]="serverName2">
+<p>{{serverName2}}</p>
+<!-- (input)="onUpdateServerName($event)" -->
+<!-- [(ngModel)]="serverName" -->
+
+
+
+<!-- [07_d]: EVENT BINDING -->
+<button id="07_d" class="btn btn-danger" (click)="onCreateServer()">JOSH</button>
+
+<hr>
+
+<app-server></app-server>
+<!-- <app-server></app-server> -->

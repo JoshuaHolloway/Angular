@@ -19,9 +19,10 @@
     * 07_a: Data Binding: String Interpolation
     * 07_b: Data Binding: Property Binding
     * 07_c: Data Binding: Property Binding vs. String Interpolation
+    * 07_d: Data Binding: Event Binding
 
     ******************************************
-    * 07_d: Data Binding: Event Binding
+    * 08: Passing and Using Data with Event Binding
     ******************************************
 
 ### Markdown Cheat-Sheet:

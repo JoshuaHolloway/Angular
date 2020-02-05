@@ -1,0 +1,42 @@
+<hr>
+
+<p>server<b>s</b>.component.html</p>
+
+<button class="btn btn-primary" disabled>Josh</button>
+
+<!-- Square brackets indicate to Angular that we are using Property Binding -->
+<!-- Bind to this property dynamically -->
+<button class="btn btn-primary" [disabled]="!allowNewServer">Josh</button>
+
+<!-- Compare Property Binding to String Interpolation -->
+<p> String Interpolation:
+    <span>{{allowNewServer}}</span>
+</p>
+<p>
+    Property Binding:
+    <span [innerText]="allowNewServer"></span>
+</p>
+
+
+<!-- [07_d] -->
+<p style="color: red; font-weight: bold;">{{serverCreationStatus}}</p>
+
+<!-- [07_d]: EVENT BINDING -->
+<button id="07_d" class="btn btn-danger" (click)="onCreateServer()">JOSH</button>
+<!-- Can bind to all of the events made available by the HTML-element -->
+
+<!-- Which Properties or Events can we bind to?  Ans: (basically) All of them. -->
+<!-- console.log the element to see which properties it has -->
+
+<!-- NOTE: You don't bind to onclick - you bind to click! -->
+
+<!-- https://stackoverflow.com/a/6004028 -->
+<!-- HTML Atribute vs. Properties -->
+<!-- You define attributes on HTML Elements -->
+<!-- Once the browser parses the code, a corresponding DOM node is created -->
+<!-- This node is an object, and therefore has properties (key-value pairs) -->
+
+<hr>
+
+<app-server></app-server>
+<!-- <app-server></app-server> -->

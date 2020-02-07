@@ -21,14 +21,14 @@
 <p style="color: red; font-weight: bold;">{{serverCreationStatus}}</p>
 
 <!-- [08] -->
-<label for="">Server Name</label>
+<label for="">(input)="onUpdateServerName($event)"</label>
 <input type="text" class="form-control" (input)="onUpdateServerName($event)">
 <p>{{serverName}}</p>
 <!-- [08]: $event is a keyword that gives us access to the event data -->
 
 
 <!-- [09] -->
-<label for="">Server Name</label>
+<label for="">Two-Way Data Binding: [(ngModel)]="serverName2"</label>
 <input type="text" class="form-control" [(ngModel)]="serverName2">
 <p>{{serverName2}}</p>
 <!-- (input)="onUpdateServerName($event)" -->

@@ -21,9 +21,10 @@
     * 007_c: Data-Binding: Property Binding vs. String Interpolation
     * 007_d: Data-Binding: Event Binding
     * 008: Passing and Using Data with Event Binding
+    * 009: Data-Binding: Two-Way Data-Binding
 
     ******************************************
-    * 009: Data-Binding: Two-Way Data-Binding
+    * 010: Combining all forms of data-binding
     ******************************************
 
 ### Markdown Cheat-Sheet:

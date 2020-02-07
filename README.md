@@ -22,9 +22,19 @@
     * 007_d: Data-Binding: Event Binding
     * 008: Passing and Using Data with Event Binding
     * 009: Data-Binding: Two-Way Data-Binding
+    * 010: Combining all forms of data-binding
+    * 011: Directives (ngIf)        
 
     ******************************************
-    * 010: Combining all forms of data-binding
+    * 012: Directives (ngElse)
+    ******************************************
+
+* 03 - Section 3: The Basics
+    ******************************************
+    * 0300: 
+        * Planning the app
+        * Setting up the application
+    * 0301: Creating the components
     ******************************************
 
 ### Markdown Cheat-Sheet:
@@ -37,7 +47,7 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 https://towardsdatascience.com/host-a-dynamic-website-on-google-firebase-for-free-using-node-js-and-cloud-firestore-db-88e98239e1b9
 
 
-Build and Optimze:\
+Build and Optimize:\
 >ng build --prod --build-optimizer
 
 Deploy:\

@@ -1,0 +1,9 @@
+<p>server.component.html</p>
+
+<!-- Anything resolved to a string in TypeScript notation is allowed in String Interpolation -->
+<p>String Interpolation: {{'valid string'}}</p>
+
+<p>Server with ID {{server_id}} is {{server_status}}</p>
+
+<!-- Can call method - as long as it resolves to string -->
+<p>Server with ID {{getServerID()}} is {{getServerStatus()}}</p>

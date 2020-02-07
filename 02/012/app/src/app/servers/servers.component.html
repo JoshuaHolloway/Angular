@@ -1,0 +1,37 @@
+<hr>
+
+<p>server<b>s</b>.component.html</p>
+
+
+<!-- [07_d] -->
+<!-- <p style="color: red; font-weight: bold;">{{serverCreationStatus}}</p> -->
+
+<!-- [011]: -->
+<!-- ngIf is a structural directive -->
+<p *ngIf="serverCreated; else noServer" style="color: red;">
+    Server was created, server name is: <u><b>{{serverName}}</b></u></p>
+
+<!-- [012] -->
+<!-- Same as *ngIf="!serverCreated" -->
+<ng-template #noServer>
+    <p style="color: blue;">
+        No server was created
+    </p>
+</ng-template>
+
+<!-- [09] -->
+<label for="">Two-Way Data Binding:"</label>
+<input type="text" class="form-control" [(ngModel)]="serverName">
+<p>{{serverName}}</p>
+<!-- (input)="onUpdateServerName($event)" -->
+<!-- [(ngModel)]="serverName" -->
+
+
+
+<!-- [07_d]: EVENT BINDING -->
+<button id="07_d" class="btn btn-danger" (click)="onCreateServer()" [disabled]="!allowNewServer">Add Server</button>
+
+<hr>
+
+<app-server></app-server>
+<!-- <app-server></app-server> -->

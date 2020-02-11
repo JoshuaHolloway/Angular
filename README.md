@@ -24,17 +24,20 @@
     * 009: Data-Binding: Two-Way Data-Binding
     * 010: Combining all forms of data-binding
     * 011: Directives (ngIf)        
+    * 012: Directives (ngElse)
+    * 213: Styling elements dynamically with ngStyle
+    * 214: Applying CSS classes dynamically with ngClass
 
     ******************************************
-    * 012: Directives (ngElse)
+    * 215: Outputting lists with ngFor
     ******************************************
 
 * 03 - Section 3: The Basics
     ******************************************
-    * 0300: 
+    * 300: 
         * Planning the app
         * Setting up the application
-    * 0301: Creating the components
+    * 301: Creating the components
     ******************************************
 
 ### Markdown Cheat-Sheet:

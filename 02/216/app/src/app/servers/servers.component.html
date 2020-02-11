@@ -51,6 +51,7 @@
 <!-- [216] -->
 <!-- Starting at the 5th log-item give all the future log-items a blue background -->
 <p *ngFor="let josh of button_clicks" [ngStyle]="{color: getColor()}">{{josh}}</p>
-<!-- <p *ngFor="let josh of button_clicks" [ngStyle]="backgroundColor: getColor()">{{josh}}</p> -->
 
-<!-- ngStyle -->
+<!-- [216 Solution] -->
+<button class="btn btn-primary" (click)="showSecret = !showSecret">Display Details</button>
+<p *ngIf="showSecret">Secret Password = tuna</p>

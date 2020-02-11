@@ -31,6 +31,9 @@ export class ServersComponent implements OnInit {
   private button_click: string;
   private number_of_button_clicks: number = 0;
 
+  // [216 Solution]
+  showSecret = false;
+
   constructor() {
     const ms = 2e3;
     setTimeout(() => {
@@ -80,6 +83,9 @@ export class ServersComponent implements OnInit {
   getColor(): string {
     return this.number_of_button_clicks >= 5 ? 'blue' : 'red';
   }
+
+
+  // [216 Solution]
 
 
 }

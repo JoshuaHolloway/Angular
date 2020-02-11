@@ -27,9 +27,10 @@
     * 012: Directives (ngElse)
     * 213: Styling elements dynamically with ngStyle
     * 214: Applying CSS classes dynamically with ngClass
+    * 215: Outputting lists with ngFor
 
     ******************************************
-    * 215: Outputting lists with ngFor
+    * 216: Practicing Directives
     ******************************************
 
 * 03 - Section 3: The Basics

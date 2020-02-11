@@ -43,7 +43,8 @@
 
 <!-- [216] -->
 <!-- Add a paragraph with 'Secret Password = Tuna' -->
-
 <p *ngIf="display_secret_password">{{secret_password}}</p>
 
-<div *ngIf="isValid"> Data is valid. </div>
+<!-- [216] -->
+<!-- Log all button clicks in an array and output that array below the secret paragraph -->
+<p *ngFor="let josh of button_clicks">{{josh}}</p>

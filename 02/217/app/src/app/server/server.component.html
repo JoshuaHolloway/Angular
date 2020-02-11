@@ -1,0 +1,8 @@
+<p>server.component.html</p>
+
+<p [ngStyle]="{backgroundColor: getColor()}" [ngClass]="{online: server_status =='online'}">{{'Server'}} with ID
+    {{server_id}} is
+    {{server_status}}</p>
+
+<!-- [ngClass]="{online: serverStatus ==='online'}" -->
+<!-- if server_status === 'online', then attach the CSS class -->

@@ -1,0 +1,69 @@
+<hr>
+
+<p>server<b>s</b>.component.html</p>
+
+
+<!-- [07_d] -->
+<!-- <p style="color: red; font-weight: bold;">{{serverCreationStatus}}</p> -->
+
+<!-- [011]: -->
+<!-- ngIf is a structural directive -->
+<p *ngIf="serverCreated; else noServer" style="color: red;">
+    Server was created, server name is: <u><b>{{serverName}}</b></u></p>
+
+<!-- [012] -->
+<!-- Same as *ngIf="!serverCreated" -->
+<ng-template #noServer>
+    <p style="color: blue;">
+        No server was created
+    </p>
+</ng-template>
+
+<!-- [09] -->
+<label for="">Two-Way Data Binding:"</label>
+<input type="text" class="form-control" [(ngModel)]="serverName">
+<p>{{serverName}}</p>
+<!-- (input)="onUpdateServerName($event)" -->
+<!-- [(ngModel)]="serverName" -->
+
+
+
+<!-- [07_d]: EVENT BINDING -->
+<button id="07_d" class="btn btn-danger" (click)="onCreateServer()" [disabled]="!allowNewServer">Add Server</button>
+
+<hr>
+
+<!-- [215] -->
+<app-server *ngFor="let server of servers"></app-server>
+<!-- <app-server></app-server> -->
+
+<!-- [216] -->
+<!-- Add a button which says Display Details -->
+<button class="btn btn-warning" (click)="toggle_password()">Display Details</button>
+
+<!-- [216] -->
+<!-- Add a paragraph with 'Secret Password = Tuna' -->
+<p *ngIf="display_secret_password">{{secret_password}}</p>
+
+<!-- [216] -->
+<!-- Log all button clicks in an array and output that array below the secret paragraph -->
+
+<!-- [216] -->
+<!-- Starting at the 5th log-item give all the future log-items a blue background -->
+<p *ngFor="let josh of button_clicks" [ngStyle]="{color: getColor()}">{{josh}}</p>
+
+<!-- [216 Solution] -->
+<!-- <button class="btn btn-primary" (click)="showSecret = !showSecret">Display Details</button> -->
+<button class="btn btn-primary" (click)="onToggleDetails()">Display Details</button>
+<p *ngIf="showSecret">Secret Password = tuna</p>
+
+<!-- [217]: grab the current index off of ngFor -->
+<!-- <div *ngFor="let logItem of log" [ngStyle]="{backgroundColor: logItem >= 5 ? 'blue' : 'transparent'}"
+    [ngClass]="{'white-text' : logItem >= 5}">
+    {{ logItem }}
+</div> -->
+<div *ngFor="let logItem of log; let i = index" [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'transparent'}"
+    [ngClass]="{'white-text' : i >= 4}">
+    {{ logItem }}
+</div>
+=

@@ -26,12 +26,14 @@ export class ServersComponent implements OnInit {
 
   // [216]
   private secret_password: string = 'tuna';
+  display_secret_password = true;
 
   constructor() {
     const ms = 2e3;
     setTimeout(() => {
       this.allowNewServer = true;
     }, ms);
+
   }
 
   ngOnInit() {
@@ -46,6 +48,7 @@ export class ServersComponent implements OnInit {
     this.servers.push(this.serverName);
 
 
+
     this.serverCreationStatus = 'Server was created! Name is ' + this.serverName;
     console.log('onCreateServer()');
 
@@ -56,11 +59,13 @@ export class ServersComponent implements OnInit {
 
   // [08]
   onUpdateServerName(event: any): void {
-
-
-
     console.log(event);
     this.serverName = (<HTMLInputElement>event.target).value;
+  }
+
+  // [216]
+  toggle_password(): void {
+    this.display_secret_password = !this.display_secret_password;
   }
 
 }

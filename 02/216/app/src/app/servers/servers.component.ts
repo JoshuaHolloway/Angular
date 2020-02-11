@@ -31,8 +31,7 @@ export class ServersComponent implements OnInit {
   private button_click: string;
   private number_of_button_clicks: number = 0;
 
-  // [216 Solution]
-  showSecret = false;
+
 
   constructor() {
     const ms = 2e3;
@@ -86,6 +85,11 @@ export class ServersComponent implements OnInit {
 
 
   // [216 Solution]
-
+  showSecret = false;
+  log = [];
+  onToggleDetails() {
+    this.showSecret = !this.showSecret;
+    this.log.push(this.log.length + 1);
+  }
 
 }

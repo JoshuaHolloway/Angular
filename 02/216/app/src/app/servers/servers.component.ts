@@ -27,9 +27,9 @@ export class ServersComponent implements OnInit {
   // [216]
   private secret_password: string = 'tuna';
   private display_secret_password: boolean = true;
-  // private button_clicks: Array<string>;
   private button_clicks: Array<string> = [];
   private button_click: string;
+  private number_of_button_clicks: number = 0;
 
   constructor() {
     const ms = 2e3;
@@ -72,6 +72,14 @@ export class ServersComponent implements OnInit {
 
     const time = Date.now().toString();
     this.button_clicks.push(time);
+
+    this.number_of_button_clicks++;
   }
+
+  // [216]
+  getColor(): string {
+    return this.number_of_button_clicks >= 5 ? 'blue' : 'red';
+  }
+
 
 }

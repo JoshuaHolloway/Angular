@@ -47,4 +47,10 @@
 
 <!-- [216] -->
 <!-- Log all button clicks in an array and output that array below the secret paragraph -->
-<p *ngFor="let josh of button_clicks">{{josh}}</p>
+
+<!-- [216] -->
+<!-- Starting at the 5th log-item give all the future log-items a blue background -->
+<p *ngFor="let josh of button_clicks" [ngStyle]="{color: getColor()}">{{josh}}</p>
+<!-- <p *ngFor="let josh of button_clicks" [ngStyle]="backgroundColor: getColor()">{{josh}}</p> -->
+
+<!-- ngStyle -->
